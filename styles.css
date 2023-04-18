@@ -1,0 +1,12 @@
+/* Navbar */
+
+#navbar .container-fluid {
+    text-align: left;
+    padding: 1%;
+}
+
+.container-fluid {
+}
+.colored-section {
+    background-color: turquoise;
+}
