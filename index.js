@@ -1,5 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("calculate-btn").addEventListener("click", calculateBMI);
+document.addEventListener("DOMContentLoaded", function () {
+    document
+        .getElementById("calculate-btn")
+        .addEventListener("click", calculateBMI);
 });
 
 function calculateBMI() {
@@ -23,9 +25,10 @@ function calculateBMI() {
     if (weightInKg > 0 && heightInM > 0) {
         const bmi = (weightInKg / (heightInM * heightInM)).toFixed(1);
         const bmiStatus = analyzeBMI(bmi);
-        resultElement.textContent = Your BMI is ${bmi}. ${bmiStatus};
+        resultElement.textContent = "Your BMI is ${bmi}. ${bmiStatus}";
     } else {
-        resultElement.textContent = "Please enter valid values for weight and height.";
+        resultElement.textContent =
+            "Please enter valid values for weight and height.";
     }
 }
 
