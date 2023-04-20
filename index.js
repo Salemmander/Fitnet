@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     document
         .getElementById("calculate-btn")
-        .addEventListener("click", calculateBMI());
+        .addEventListener("click", calculateBMI);
 });
 
 function calculateBMI() {
