@@ -1,54 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fitnet</title>
-        <!-- Bootstrap -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-        />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Styles -->
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <section id="navbar" class="colored-section">
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="">Fitnet</a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        class="collapse navbar-collapse"
-                        id="navbarSupportedContent"
-                    >
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#footer">Placeholder</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#pricing">Placeholder</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#cta">Placeholder</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Website</h1>
+    </header>
+    <main>
+        <section class="bmi-calculator">
+            <h2>BMI Calculator</h2>
+            <label for="weight-unit">Weight Unit:</label>
+            <select id="weight-unit">
+                <option value="kg">Kilograms (kg)</option>
+                <option value="lbs">Pounds (lbs)</option>
+            </select>
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" step="0.01" min="0">
+            <label for="height-unit">Height Unit:</label>
+            <select id="height-unit">
+                <option value="m">Meters (m)</option>
+                <option value="in">Inches (in)</option>
+            </select>
+            <label for="height">Height:</label>
+            <input type="number" id="height" step="0.01" min="0">
+            <button id="calculate-btn">Calculate BMI</button>
+            <p id="bmi-result"></p>
         </section>
-        <script src="index.js" charset="UTF-8"></script>
-    </body>
+        <section class="workout-routines">
+            <h2>Workout Routines</h2>
+            <div class="routine">
+                <h3>1. Cardio Blast</h3>
+                <p>Warm-up, running, cycling, jump rope, and cool-down.</p>
+            </div>
+            <div class="routine">
+                <h3>2. Strength Training</h3>
+                <p>Warm-up, squats, lunges, push-ups, planks, and cool-down.</p>
+            </div>
+            <div class="routine">
+                <h3>3. Yoga and Stretching</h3>
+                <p>Warm-up, sun salutations, standing poses, seated poses, and relaxation.</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
 </html>
