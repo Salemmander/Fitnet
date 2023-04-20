@@ -1,16 +1,72 @@
-/* Navbar */
-
-#navbar .container-fluid {
-    text-align: left;
-    padding: 1%;
+* {
+    box-sizing: border-box;
 }
 
-.container-fluid {
-}
-.colored-section {
-    background-color: turquoise;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
-.red-background {
-  background-color: red;
+header {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 1rem;
 }
+
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.bmi-calculator,
+.workout-routines {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+label,
+input,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input {
+    height: 2.5rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    height: 2.5rem;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.workout-routines h2 {
+    margin-top: 0;
+}
+
+.routine {
