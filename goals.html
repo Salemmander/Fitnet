@@ -49,24 +49,35 @@
         </section>
 </header>
 <body>
-    <div id="calendar-div"><p id="calendar"></p></div>
-    <style>
-        table {
-          border-collapse: collapse;
-        }
-    
-        td,
-        th {
-          border: 1px solid black;
-          padding: 3px;
-          text-align: center;
-        }
-    
-        th {
-          font-weight: bold;
-          background-color: #E6E6E6;
-        }
-    </style>
+    <form>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label>Your Goal:</label></td>
+                        <td><input type="text" name="goal" /></td>
+                    </tr>
+                    <tr>
+                        <td><label>Accomplish By:</label></td>
+                        <td><input type="text" name="dueDate" /></td>
+                    </tr>
+                    <tr>
+                        <td><label>Why do you want to achieve this:</label></td>
+                        <td>
+                            <textarea
+                                name="whyGoal"
+                                cols="30"
+                                rows="10"
+                            ></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
 <script src="goals.js"></script>
 </body>
 </html>
