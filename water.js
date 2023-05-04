@@ -14,7 +14,7 @@ function addWater() {
         } else {
             let progress = totalWater;
             progressBar.style.width = progress + "%";
-            waterInfo.textContent = totalWater + "/" + goal + "ml";
+            waterInfo.textContent = totalWater + " / " + goal + " ml";
         }
     }
 

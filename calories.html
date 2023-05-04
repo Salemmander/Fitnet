@@ -41,7 +41,7 @@
                                 <a class="nav-link" href="water.html">Water</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="signin.html">Sign in</a>
+                                <a class="nav-link" href="calories.html">Calories</a>
                             </li>
                         </ul>
                     </div>
@@ -49,7 +49,16 @@
         </section>
 </header>
 <body>
-
-    <script src="signin.js"></script>
+    <div class="container">
+        <h1>Calorie Tracker</h1>
+        <label for="calorie-input">Enter calorie intake:</label>
+        <input type="number" id="calorie-input" min="0">
+        <button onclick="addCalories()">Add</button>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <p id="calorie-info">0 / 2500 cals</p>
+    </div>
+    <script src="calories.js"></script>
 </body>
 </html>
