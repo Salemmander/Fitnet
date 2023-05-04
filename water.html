@@ -49,7 +49,16 @@
         </section>
 </header>
 <body>
-
+    <div class="container">
+        <h1>Water Tracker</h1>
+        <label for="water-input">Enter water intake (in ml):</label>
+        <input type="number" id="water-input" min="0">
+        <button onclick="addWater()">Add</button>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <p id="water-info">0 / 2000 ml</p>
+    </div>
     <script src="water.js"></script>
 </body>
 </html>
